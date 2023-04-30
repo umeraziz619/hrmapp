@@ -3,7 +3,6 @@ import Link from 'next/link'
 const Services = ({items}) => {
   
   return (
-    
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div>
@@ -15,7 +14,7 @@ const Services = ({items}) => {
             <p></p>
           </div>
         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-        {items.map((item) => (
+        {items?.map((item) => (
           <Link href={item.mylink} class="p-4 md:w-1/3 sm:mb-0 mb-6" key={item.id}>
             <div class="rounded-lg h-64 overflow-hidden transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300">
               {/* <img alt="content" class="object-cover object-center h-full w-full" src="https://t4.ftcdn.net/jpg/02/84/04/63/360_F_284046358_xFSfxtd82cPOQijgflp1jqhjABTVyEol.jpg"/> */}
